@@ -5,6 +5,9 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ['Inter', 'sans-serif']
+    },
     extend: {
       backgroundImage: {
         galaxy: "url('/background-galaxy.png')",
@@ -13,6 +16,5 @@ module.exports = {
       }
     }
   },
-
   plugins: [],
 }
