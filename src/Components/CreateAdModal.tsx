@@ -38,9 +38,9 @@ export function CreateAdModal() {
                         >
                             <option disabled value="">Selecione o game que deseja jogar</option>
                             {
-                                games.map(game => (
-                                    <option key={game.id} value={game.id}>{game.title}</option>
-                                ))
+                                games.map(game => {
+                                    return <option key={game.id} value={game.id}>{game.title}</option>
+                                })
                             }
                         </select>
                     </div>
